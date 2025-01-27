@@ -15,6 +15,7 @@ public class GlobalExceptionHandler {
     private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
 
+
     @ExceptionHandler
     private ResponseEntity<BurgerErrorResponse> handleException(BurgerException exception){
         log.error("Burger exception accured! Details", exception);
